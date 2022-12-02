@@ -9,17 +9,11 @@ namespace Matris1GrupBulma
     class Program
     {
 
-        static void Gruplama(int[,] M, int i, int j, int Satir,
-                        int Sütun)
+        static void Gruplama(int[,] M, int i, int j, int Satir,int Sütun)
         {
-
-            
             if (i < 0 || j < 0 || i > (Satir - 1) || j > (Sütun - 1)
                 || M[i, j] != 1)
-            {
                 return;
-            }
-
             if (M[i, j] == 1)
             {
                 M[i, j] = 0;
@@ -34,7 +28,7 @@ namespace Matris1GrupBulma
             }
         }
 
-        static int countIslands(int[,] M)
+        static int AdaKapasite(int[,] M)
         {
             int Satir = M.GetLength(0);
             int Sütun = M.GetLength(1);
@@ -52,49 +46,22 @@ namespace Matris1GrupBulma
             }
             return count;
         }
-
-        
         static void Main()
         {
-            int[,] Matris = new int[8, 8];
-            for (int i = 0; i < 8; i++)
+            Console.WriteLine("Matrisin Satır Sayısını Giriniz: ");
+            int Satir = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Matrisin Sütun Sayısını Giriniz: ");
+            int Sütun = Convert.ToInt32(Console.ReadLine());
+            int[,] Matris = new int[Satir, Sütun];
+            Random rnd = new Random();
+            for (int i = 0; i < Satir; i++)
             {
-                for (int j = 0; j < 8; j++)
+                for (int j = 0; j < Sütun; j++)
                 {
-                    Matris[i, j] = 0;
+                    Matris[i, j] = rnd.Next(0,2);
                 }
-            }
-            #region 1 Atama
-            Matris[0, 0] = 1;
-            Matris[0, 3] = 1;
-            Matris[0, 6] = 1;
-            Matris[2, 0] = 1;
-            Matris[4, 0] = 1;
-            Matris[7, 2] = 1;
-            Matris[7, 5] = 1;
-            Matris[5, 7] = 1;
-            Matris[3, 7] = 1;
-            Matris[1, 1] = 1;
-            Matris[1, 3] = 1;
-            Matris[1, 6] = 1;
-            Matris[2, 1] = 1;
-            Matris[2, 5] = 1;
-            Matris[2, 6] = 1;
-            Matris[3, 2] = 1;
-            Matris[3, 5] = 1;
-            Matris[3, 6] = 1;
-            Matris[4, 2] = 1;
-            Matris[5, 2] = 1;
-            Matris[5, 6] = 1;
-            Matris[6, 6] = 1;
-            Matris[5, 4] = 1;
-            //Matris[4,4] = 1;
-
-
-            #endregion
-
-            Console.Write("1'li ada sayısı: "
-                          + countIslands(Matris));
+            } 
+            Console.Write("1'li ada sayısı: "+ AdaKapasite(Matris));
             Console.ReadLine();
         }
     }    
