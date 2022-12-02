@@ -1,0 +1,7 @@
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\bin\Debug\Matris1GrupBulma.exe.config
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\bin\Debug\Matris1GrupBulma.exe
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\bin\Debug\Matris1GrupBulma.pdb
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\obj\Debug\Matris1GrupBulma.csproj.AssemblyReference.cache
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\obj\Debug\Matris1GrupBulma.csproj.CoreCompileInputs.cache
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\obj\Debug\Matris1GrupBulma.exe
+C:\Users\Abdullah\Desktop\üniversite\C++ Projeler\Matris1GrupBulma\Matris1GrupBulma\obj\Debug\Matris1GrupBulma.pdb
